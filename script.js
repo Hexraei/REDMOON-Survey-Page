@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
 
     // --- CONFIGURATION ---
-    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbyh5hy-CuaafLA7dx1taTuAALAplYhOzAl3RHAMs8r5l7tRgyIMnamWWOHSTzCwXA5amg/exec';
+    const SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbzCKTnlvLstibW3S22dB1IlEqxpB8SNCVrjATaA_CXlAlazQeMYimpSveHkQGwM2H6e-w/exec';
     const STUDENT_DOMAIN = '@student.annauniv.edu';
     const DISCOUNT_PERCENTAGE = 0.7; // 70% discount
 
