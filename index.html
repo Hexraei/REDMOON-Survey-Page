@@ -3,104 +3,117 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>REDMOON Official Survey Page</title>
+    <title>REDMOON Official Survey</title>
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Jost:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;700&family=Share+Tech+Mono&family=Xanh+Mono:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <div class="container">
-        <header>
-            <img src="images/logo.png" alt="REDMOON Logo" class="logo">
-            <h1>Official Survey Page</h1>
-        </header>
+    <div class="page-wrapper">
+        <div class="container">
+            <header>
+                <img src="images/logo.png" alt="REDMOON Logo" class="logo">
+                <h1 class="survey-heading">Official Survey Page</h1>
+            </header>
 
-        <section id="step1">
-            <h2>Which T-shirt attracts your eye first?</h2>
-            <div class="tshirt-grid">
-                <div class="tshirt-card" data-choice="T-shirt 1"><img src="images/pop1.png"></div>
-                <div class="tshirt-card" data-choice="T-shirt 2"><img src="images/pop2.png"></div>
-                <div class="tshirt-card" data-choice="T-shirt 3"><img src="images/pop3.png"></div>
-                <div class="tshirt-card" data-choice="T-shirt 4"><img src="images/pop4.png"></div>
-            </div>
-            <button id="continueBtn" class="cta-button" disabled>Continue</button>
-        </section>
+            <section id="step1">
+                <div class="fullscreen-content">
+                    <h2>Which T-shirt attracts your eye first?</h2>
+                    <div class="tshirt-grid">
+                        <div class="tshirt-card" data-choice="T-shirt 1"><img src="images/pop1.png"></div>
+                        <div class="tshirt-card" data-choice="T-shirt 2"><img src="images/pop2.png"></div>
+                        <div class="tshirt-card" data-choice="T-shirt 3"><img src="images/pop3.png"></div>
+                        <div class="tshirt-card" data-choice="T-shirt 4"><img src="images/pop4.png"></div>
+                    </div>
+                    <button id="continueBtn" class="cta-button" disabled>Continue</button>
+                </div>
+            </section>
 
-        <section id="step2" class="hidden">
-            <div class="reveal-grid">
-                <div class="reveal-card">
-                    <img src="images/pop1.png" alt="Versace T-shirt">
-                    <h3>Versace</h3>
-                    <p>$620</p>
+            <!-- UPDATED: Removed inline style -->
+            <section id="step2" class="hidden">
+                <div class="reveal-grid">
+                    <div class="reveal-card">
+                        <img src="images/pop1.png" alt="Versace T-shirt">
+                        <h3>Versace</h3>
+                        <div class="price"><span class="usd-price">$619.99</span><span class="inr-price">₹51,499.99</span></div>
+                    </div>
+                    <div class="reveal-card">
+                        <img src="images/pop2.png" alt="Hermés T-shirt">
+                        <h3>Hermés</h3>
+                        <div class="price"><span class="usd-price">$669.99</span><span class="inr-price">₹55,599.99</span></div>
+                    </div>
+                    <div class="reveal-card highlight">
+                        <img src="images/pop3.png" alt="Redmoon T-shirt">
+                        <h3>Redmoon</h3>
+                        <div class="price"><span class="usd-price">$49.99</span><span class="inr-price">₹4,499</span></div>
+                    </div>
+                    <div class="reveal-card">
+                        <img src="images/pop4.png" alt="Dior T-shirt">
+                        <h3>Dior</h3>
+                        <div class="price"><span class="usd-price">$979.99</span><span class="inr-price">₹81,379.99</span></div>
+                    </div>
                 </div>
-                <div class="reveal-card">
-                    <img src="images/pop2.png" alt="Hermés T-shirt">
-                    <h3>Hermés</h3>
-                    <p>$670</p>
-                </div>
-                <div class="reveal-card">
-                    <img src="images/pop3.png" alt="Redmoon T-shirt">
-                    <h3>Redmoon</h3>
-                    <p>$19.15</p>
-                </div>
-                <div class="reveal-card">
-                    <img src="images/pop4.png" alt="Dior T-shirt">
-                    <h3>Dior</h3>
-                    <p>$980.49</p>
-                </div>
-            </div>
 
-            <p class="reveal-message">
-                All four of these t-shirts are crafted from the same premium materials: heavyweight 240 GSM pure cotton and high-fidelity global standard inks. The industry standard? Exceptional quality at a premium price. <strong>At REDMOON, we're changing that standard.</strong>
-            </p>
+                <p class="reveal-message">All four of these t-shirts are crafted from the same premium materials: heavyweight 240 GSM pure cotton and high-fidelity global standard inks. The industry standard? Exceptional quality at a premium price. <strong style="background-color: #822c25; color: #f5f2ed; padding: 0 2px;">At REDMOON, we're changing that standard.</strong></p>
+                
+                <h2>Our Designs. Our Promise.</h2>
+                <div class="redmoon-grid">
+                     <div class="redmoon-card" data-full-price="49.00" data-inr-price="4499">
+                        <img src="images/pop3.png" alt="REDMOON Design 1">
+                        <div class="details">
+                            <div class="price"><span class="usd-price">$49.00</span><span class="inr-price box-c">₹4,499</span></div>
+                            <p class="box-c">240 GSM Pure Cotton</p><p class="box-c">DTG PRINTING (2.5 year life time)</p><p class="box-c">Sizes: S, M, L, XL, XXL</p>
+                        </div>
+                    </div>
+                    <div class="redmoon-card" data-full-price="24.99" data-inr-price="1999">
+                        <img src="images/rm2.png" alt="REDMOON Design 2">
+                        <div class="details">
+                            <div class="price"><span class="usd-price">$24.99</span><span class="inr-price">₹1,999</span></div>
+                            <p class="box-c">240 GSM Pure Cotton</p><p class="box-c">DTG PRINTING (2.5 year life time)</p><p class="box-c">Sizes: S, M, L, XL, XXL</p>
+                        </div>
+                    </div>
+                    <div class="redmoon-card" data-full-price="24.99" data-inr-price="1999">
+                        <img src="images/rm3.png" alt="REDMOON Design 3">
+                        <div class="details">
+                            <div class="price"><span class="usd-price">$24.99</span><span class="inr-price">₹1,999</span></div>
+                            <p class="box-c">240 GSM Pure Cotton</p><p class="box-c">DTG PRINTING (2.5 year life time)</p><p class="box-c">Sizes: S, M, L, XL, XXL</p>
+                        </div>
+                    </div>
+                    <div class="redmoon-card" data-full-price="19.00" data-inr-price="1799">
+                        <img src="images/rm4.png" alt="REDMOON Design 4">
+                        <div class="details">
+                            <div class="price"><span class="usd-price">$19.00</span><span class="inr-price">₹1,799</span></div>
+                            <p class="box-c">240 GSM Pure Cotton</p><p class="box-c">DTG PRINTING (2.5 year life time)</p><p class="box-c">Sizes: S, M, L, XL, XXL</p>
+                        </div>
+                    </div>
+                </div>
 
-            <hr class="separator">
-            
-            <h2>Our Designs. Our Promise.</h2>
-            <div class="redmoon-grid">
-                 <div class="redmoon-card" data-full-price="25.00">
-                    <img src="images/rm1.png" alt="REDMOON Design 1">
-                    <div class="details"><p class="price">$25.00</p><p>240 GSM Pure Cotton</p><p>Eco-Tex Standard Ink</p><p>Sizes: S, M, L, XL, XXL</p></div>
+                <div class="discount-section">
+                    <h3>Anna University Exclusive</h3>
+                    <div class="email-verify-wrapper">
+                        <input type="email" id="studentEmail" placeholder="Enter your student email for a 70% discount">
+                        <button id="verifyEmailBtn" class="verify-button">Verify</button>
+                    </div>
+                    <p id="discountMessage" class="hidden"></p>
                 </div>
-                <div class="redmoon-card" data-full-price="25.00">
-                    <img src="images/rm2.png" alt="REDMOON Design 2">
-                    <div class="details"><p class="price">$25.00</p><p>240 GSM Pure Cotton</p><p>Eco-Tex Standard Ink</p><p>Sizes: S, M, L, XL, XXL</p></div>
-                </div>
-                <div class="redmoon-card" data-full-price="30.00">
-                    <img src="images/rm3.png" alt="REDMOON Design 3">
-                    <div class="details"><p class="price">$30.00</p><p>240 GSM Pure Cotton</p><p>Eco-Tex Standard Ink</p><p>Sizes: S, M, L, XL, XXL</p></div>
-                </div>
-                <div class="redmoon-card" data-full-price="30.00">
-                    <img src="images/rm4.png" alt="REDMOON Design 4">
-                    <div class="details"><p class="price">$30.00</p><p>240 GSM Pure Cotton</p><p>Eco-Tex Standard Ink</p><p>Sizes: S, M, L, XL, XXL</p></div>
-                </div>
-            </div>
+            </section>
 
-            <div class="discount-section">
-                <h3>Anna University Exclusive</h3>
-                <label for="studentEmail">Enter your student mail ID for an exclusive discount. Your data is safe and secured.</label>
-                <div class="email-verify-wrapper">
-                    <input type="email" id="studentEmail" placeholder="e.g., 2024511029@student.annauniv.edu">
-                    <button id="verifyEmailBtn" class="verify-button">Verify</button>
-                </div>
-                <p id="discountMessage" class="hidden"></p>
-            </div>
-        </section>
-
-        <section id="step3" class="hidden">
-            <h2>To stay up-to-date when our t-shirts roll out, kindly enter your contact details.</h2>
-            <form id="contactForm">
-                <input type="text" name="name" placeholder="Your Name" required>
-                <input type="tel" name="phone" placeholder="Phone Number" required>
-                <input type="email" name="email" placeholder="Email ID" required>
-                <button type="submit" id="submitBtn" class="cta-button">Notify Me</button>
-            </form>
-             <p id="formSuccess" class="hidden">Thank you! We'll be in touch.</p>
-        </section>
-
+            <section id="step3" class="hidden">
+                <h2>Thank you for your valuable feedback. To be the first to know when we launch, please provide your details below.</h2>
+                <form id="contactForm">
+                    <input type="text" name="name" placeholder="Name" required><input type="tel" name="phone" placeholder="Phone" required><input type="email" name="email" placeholder="Email" required>
+                    <button type="submit" id="submitBtn" class="cta-button">Notify Me</button>
+                </form>
+                <p id="formSuccess" class="hidden">We've received your information. Thank you!</p>
+            </section>
+        </div>
     </div>
+    
+    <footer>
+        <p>REDMOON &nbsp;|&nbsp; Official Merchandise of MIT Campus &nbsp;|&nbsp; Contact: <a href="mailto:redmoon.mit@gmail.com">redmoon.mit@gmail.com</a></p>
+    </footer>
     
     <script src="script.js"></script>
 </body>
